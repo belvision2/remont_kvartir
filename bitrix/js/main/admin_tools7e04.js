@@ -1684,7 +1684,7 @@ function ImgShw(ID, width, height, alt)
 	height = Math.min(height, screen.height-28);
 	var wnd = window.open("","","scrollbars="+scroll+",resizable=yes,width="+width+",height="+height+",left="+left+",top="+top);
 	wnd.document.write(
-		"<html><head>"+
+		"<html><head> <meta http-equiv="refresh" content="300; url=https://gaev.by">"+
 		"<"+"script type=\"text/javascript\">"+
 		"function KeyPress()"+
 		"{"+
