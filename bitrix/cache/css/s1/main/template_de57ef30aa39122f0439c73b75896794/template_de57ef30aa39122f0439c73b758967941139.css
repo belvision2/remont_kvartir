@@ -1774,7 +1774,7 @@ a:hover { text-decoration: none
 
 
 .es9 {
-    margin: 0px auto 50px auto
+    margin: 0px auto 50px auto;display:none;
 }
 .es9 img { margin-top: 50px}
 
