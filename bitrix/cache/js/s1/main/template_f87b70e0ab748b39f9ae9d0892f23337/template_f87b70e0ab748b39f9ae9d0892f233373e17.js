@@ -136,27 +136,7 @@ function set_credential() {
 	$input_comagic.val(JSON.stringify(credential));
 }
 
-$(window).load(function() {
-	if(Comagic !== undefined && Comagic !== null) {
-		try {
-			credential = Comagic.getCredentials();
-		} catch (e) {
-			credential = [];
-			credential.hit_id = NaN;
-			console.log(e);
-		}
-		
-		if( isNaN(credential.hit_id) ) {
-			cred_timeout = setTimeout(get_credential, 300);
-		}
-		else {
-			set_credential();
-		}
-	}
-	else {
-		cred_timeout = setTimeout(get_credential, 300);
-	}
-});
+
 
 /*
 BX.addCustomEvent('onAjaxSuccess', function(){
