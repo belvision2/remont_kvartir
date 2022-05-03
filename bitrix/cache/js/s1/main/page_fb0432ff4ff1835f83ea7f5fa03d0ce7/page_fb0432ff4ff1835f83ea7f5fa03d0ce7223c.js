@@ -82,10 +82,10 @@
 		$.each(['Days','Hours','Minutes','Seconds'],function(i){
 			$('<span class="count'+this+'">').html(
 				'<span class="position">\
-					<span class="digit static">0</span>\
+					<span class="digit static"></span>\
 				</span>\
 				<span class="position">\
-					<span class="digit static">0</span>\
+					<span class="digit static"></span>\
 				</span>'
 			).appendTo(elem);
 			
